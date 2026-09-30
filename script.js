@@ -19,9 +19,33 @@ buttons.forEach(button => {
 
 const form = document.getElementById('requestForm');
 const status = document.getElementById('formStatus');
+
 if (form) {
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    status.textContent = 'Форма заполнена. Подключение канала приёма заявок — следующий технический шаг.';
+
+    const submit = form.querySelector('button[type="submit"]');
+    const original = submit.innerHTML;
+    submit.disabled = true;
+    submit.textContent = 'Отправляем…';
+    status.textContent = '';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (!response.ok) throw new Error('send_failed');
+
+      status.textContent = 'Заявка отправлена. Мы свяжемся с вами.';
+      form.reset();
+    } catch (error) {
+      status.textContent = 'Не удалось отправить заявку. Попробуйте ещё раз.';
+    } finally {
+      submit.disabled = false;
+      submit.innerHTML = original;
+    }
   });
 }
