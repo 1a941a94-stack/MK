@@ -392,3 +392,37 @@ button,input{font:inherit}
   #app-v2 .v2-final h2{font-size:14vw}
   #app-v2 .v2-form{padding:24px}
 }
+
+
+/* ===== direct high-resolution PNG assets ===== */
+#app-v2 .v2-first{
+  background-image:
+    linear-gradient(90deg,rgba(2,3,4,.92) 0%,rgba(2,3,4,.66) 34%,rgba(2,3,4,.12) 72%),
+    linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.58)),
+    url("/%D0%BF%D0%BE%D1%80%D0%BE%D0%B3_%D1%80%D0%B0%D1%81%D1%81%D0%B2%D0%B5%D1%82%D0%B0_%D0%BD%D0%B0%D0%B4_%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+#app-v2 .v2-being-art{
+  background-image:url("/%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5_%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D1%8B_%D0%BD%D0%B0_%D1%80%D0%B0%D1%81%D1%81%D0%B2%D0%B5%D1%82%D0%B5.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+#app-v2 .v2-mystery-art{
+  background-image:url("/%D1%81%D0%BE%D0%B7%D0%B5%D1%80%D1%86%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5_%D0%B2_%D1%85%D1%80%D0%B0%D0%BC%D0%B5.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+#app-v2 .v2-final-art{
+  background-image:url("/%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D1%80%D0%B0%D1%81%D1%81%D0%B2%D0%B5%D1%82_%D0%BD%D0%B0%D0%B4_%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%BC_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE%D0%BC.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+@media(max-width:560px){
+  #app-v2 .v2-first{
+    background-image:
+      linear-gradient(180deg,rgba(2,3,4,.68) 0%,rgba(2,3,4,.42) 45%,rgba(2,3,4,.76) 100%),
+      url("/%D0%BF%D0%BE%D1%80%D0%BE%D0%B3_%D1%80%D0%B0%D1%81%D1%81%D0%B2%D0%B5%D1%82%D0%B0_%D0%BD%D0%B0%D0%B4_%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9.png") !important;
+    background-position:58% center !important;
+  }
+}
