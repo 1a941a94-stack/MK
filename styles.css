@@ -708,3 +708,101 @@ button,input{font:inherit}
     font-size:16px;
   }
 }
+
+
+/* ===== iPhone first-screen polish + non-emoji arrows ===== */
+#app-v2 .css-arrow{
+  position:relative;
+  display:inline-block;
+  width:12px;
+  height:12px;
+  flex:0 0 12px;
+}
+#app-v2 .css-arrow::before{
+  content:"";
+  position:absolute;
+  right:1px;
+  top:1px;
+  width:7px;
+  height:7px;
+  border-top:1.5px solid currentColor;
+  border-right:1.5px solid currentColor;
+}
+#app-v2 .css-arrow::after{
+  content:"";
+  position:absolute;
+  left:2px;
+  bottom:2px;
+  width:10px;
+  height:1.5px;
+  background:currentColor;
+  transform:rotate(-45deg);
+  transform-origin:center;
+}
+#app-v2 .v2-request-link{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+#app-v2 .v2-form button .css-arrow{
+  margin-left:auto;
+}
+
+@media (max-width:640px){
+  #app-v2 .v2-first{
+    padding:112px 20px 28px;
+    background-position:61% center!important;
+  }
+
+  #app-v2 .v2-first-copy{
+    padding-bottom:76px;
+  }
+
+  #app-v2 .v2-first h1{
+    width:100%;
+    max-width:100%;
+    margin:12px 0 20px;
+    font-size:clamp(52px,14.4vw,64px);
+    line-height:.86;
+    letter-spacing:-.065em;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+    hyphens:none!important;
+  }
+
+  #app-v2 .v2-question{
+    max-width:100%;
+    font-size:clamp(27px,7.7vw,35px);
+    line-height:1.04;
+    letter-spacing:-.035em;
+  }
+
+  #app-v2 .v2-first-bottom{
+    bottom:22px;
+    max-width:78%;
+  }
+
+  #app-v2 .v2-request-link{
+    border-bottom:1px solid rgba(255,255,255,.42);
+    padding-bottom:5px;
+  }
+
+  #app-v2 .v2-request-link .css-arrow{
+    width:10px;
+    height:10px;
+    flex-basis:10px;
+  }
+
+  #app-v2 .v2-form button{
+    align-items:center;
+  }
+}
+
+@media (max-width:390px){
+  #app-v2 .v2-first h1{
+    font-size:13.7vw;
+  }
+  #app-v2 .v2-question{
+    font-size:7.35vw;
+  }
+}
