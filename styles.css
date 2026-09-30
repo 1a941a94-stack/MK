@@ -426,3 +426,17 @@ button,input{font:inherit}
     background-position:58% center !important;
   }
 }
+
+
+/* second screen — user-selected alternate artwork */
+#app-v2 .v2-being-art{
+  background-image:url("/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20ChatGPT%2030%20%D1%81%D0%B5%D0%BD%D1%82.%202026%20%D0%B3.,%2016_09_08.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  filter:saturate(.82) contrast(1.06) brightness(.9);
+}
+@media(max-width:560px){
+  #app-v2 .v2-being-art{
+    background-position:56% center !important;
+  }
+}
