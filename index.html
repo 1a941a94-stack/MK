@@ -110,8 +110,11 @@
         <div class="v2-meta"><span>Красноярск</span><span>Дата формируется</span></div>
       </div>
 
-      <form class="v2-form" id="requestForm">
+      <form class="v2-form" id="requestForm" action="https://formsubmit.co/ajax/Ylizaveta@mail.ru" method="POST">
         <div class="v2-form-title">Оставить заявку</div>
+        <input type="hidden" name="_subject" value="Новая заявка — Мастерский курс">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <label><span>Имя</span><input name="name" autocomplete="name" required placeholder="Ваше имя"></label>
         <label><span>Телефон или Telegram</span><input name="contact" required placeholder="+7 ... / @username"></label>
         <label><span>Где проходили Лидерскую программу</span><input name="city" placeholder="Город / центр"></label>
