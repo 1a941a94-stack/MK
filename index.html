@@ -3,215 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#08090a">
-  <meta name="description" content="Мастерский курс в Красноярске. От БЫТЬ к ИМЕТЬ. Для выпускников Лидерской программы. Дата формируется.">
+  <meta name="theme-color" content="#070809">
+  <meta name="description" content="Мастерский курс в Красноярске. Каким человеком быть, чтобы результат пришёл в жизнь.">
   <title>Мастерский курс — Красноярск</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body id="app-v2">
   <div class="noise" aria-hidden="true"></div>
-  <header class="header">
-    <a class="brand" href="#top" aria-label="Мастерский курс">
-      <span class="brand-mark">MK</span>
-      <span class="brand-copy">МАСТЕРСКИЙ КУРС<br><b>КРАСНОЯРСК</b></span>
-    </a>
-    <nav class="nav">
-      <a href="#route">Путь</a>
-      <a href="#context">Контекст</a>
-      <a href="#participation">Участие</a>
-    </nav>
-    <a class="ghost-button" href="#request">Оставить заявку <span>↗</span></a>
+
+  <header class="v2-header">
+    <a href="#screen1" class="v2-brand">МК <span>КРАСНОЯРСК</span></a>
+    <div class="v2-progress" aria-label="Навигация по экранам">
+      <a href="#screen1">01</a><a href="#screen2">02</a><a href="#screen3">03</a><a href="#screen4">04</a><a href="#screen5">05</a>
+    </div>
+    <a href="#screen5" class="v2-request-link">Оставить заявку ↗</a>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-shade"></div>
-      <div class="hero-copy-block">
-        <div class="kicker">ОЧНО · КРАСНОЯРСК · ДАТА ФОРМИРУЕТСЯ</div>
-        <h1>ОТ <span>БЫТЬ</span><br>К <em>ИМЕТЬ</em></h1>
-        <p class="hero-lead">Ты уже умеешь действовать. Вопрос — <strong>из какого состояния</strong> ты создаёшь то, что получаешь.</p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#request">Войти в игру <span>→</span></a>
-          <a class="text-link" href="#route">Смотреть путь</a>
-        </div>
+  <main class="v2-main">
+    <section class="v2-screen v2-first" id="screen1">
+      <div class="v2-overlay"></div>
+      <div class="v2-number">01 / 05</div>
+      <div class="v2-first-copy">
+        <div class="v2-kicker">МАСТЕРСКИЙ КУРС · КРАСНОЯРСК</div>
+        <h1>МАСТЕРСКИЙ<br>КУРС</h1>
+        <p class="v2-question">Каким человеком <em>быть</em>,<br>чтобы результат пришёл в жизнь?</p>
+        <a href="#screen2" class="v2-arrow-link">Начать <span>↓</span></a>
       </div>
-
-      <div class="portal-stage" aria-hidden="true">
-        <div class="portal-aura"></div>
-        <div class="portal-ring ring-one"></div>
-        <div class="portal-ring ring-two"></div>
-        <div class="portal-ring ring-three"></div>
-        <div class="portal-core">
-          <div class="portal-sky"></div>
-          <div class="portal-mountain m1"></div>
-          <div class="portal-mountain m2"></div>
-          <div class="portal-water"></div>
-          <div class="portal-sun"></div>
-          <div class="portal-person"></div>
-        </div>
-        <div class="portal-words">
-          <span>ЯСНОСТЬ</span>
-          <span>ВЫБОР</span>
-          <span>РЕЗУЛЬТАТ</span>
-        </div>
-      </div>
-
-      <aside class="hero-card">
-        <span class="micro">ДЛЯ КОГО</span>
-        <h2>Для выпускников<br>Лидерской программы</h2>
-        <div class="hero-card-line"></div>
-        <div class="hero-card-fact"><span>Формат</span><b>Очно</b></div>
-        <div class="hero-card-fact"><span>Город</span><b>Красноярск</b></div>
-        <div class="hero-card-fact"><span>Дата</span><b>Формируется</b></div>
-      </aside>
-
-      <div class="hero-bottom-note">
-        <span>Не новая цель.</span>
-        <b>Другая точка, из которой ты выбираешь.</b>
+      <div class="v2-first-bottom">
+        <span>Для выпускников Лидерской программы</span>
+        <span>Очно · дата формируется</span>
       </div>
     </section>
 
-    <section class="route" id="route">
-      <div class="section-head">
-        <span class="section-num">01</span>
-        <p>Снаружи всё может выглядеть привычно.<br>Меняется источник решения.</p>
+    <section class="v2-screen v2-being" id="screen2">
+      <div class="v2-being-art visual-choice" aria-hidden="true"></div>
+      <div class="v2-being-shade"></div>
+      <div class="v2-number">02 / 05</div>
+
+      <div class="v2-axis">
+        <strong>БЫТЬ</strong><i></i><strong class="v2-axis-end">ИМЕТЬ</strong>
       </div>
 
-      <div class="route-grid">
-        <article class="route-card" data-depth="1">
-          <div class="route-visual visual-self"></div>
-          <div class="route-content">
-            <span>01</span>
-            <h3>ГЛУБЖЕ<br>СЕБЯ</h3>
-            <p>Что остаётся, если убрать роли, ожидания и привычные объяснения?</p>
-            <button class="route-open" type="button">Открыть вопрос <i>↗</i></button>
-          </div>
-        </article>
-
-        <article class="route-card" data-depth="2">
-          <div class="route-visual visual-choice"></div>
-          <div class="route-content">
-            <span>02</span>
-            <h3>ЯСНЕЕ<br>ВЫБОР</h3>
-            <p>Что изменится, если перестать реагировать автоматически?</p>
-            <button class="route-open" type="button">Открыть вопрос <i>↗</i></button>
-          </div>
-        </article>
-
-        <article class="route-card" data-depth="3">
-          <div class="route-visual visual-result"></div>
-          <div class="route-content">
-            <span>03</span>
-            <h3>БЛИЖЕ<br>РЕЗУЛЬТАТ</h3>
-            <p>Что ты создаёшь, когда действие рождается не из привычного сценария?</p>
-            <button class="route-open" type="button">Открыть вопрос <i>↗</i></button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="context" id="context">
-      <div class="context-top">
-        <span class="section-num">02</span>
-        <div class="context-title">
-          <span class="eyebrow">КОНТЕКСТ МАСТЕРСКОГО</span>
-          <h2>Если больше усилий<br>не даёт больше результата —<br><em>возможно, менять нужно не цель.</em></h2>
-        </div>
-      </div>
-
-      <div class="game-board">
-        <div class="game-copy">
-          <div class="micro light">МИКРО-ИГРА</div>
-          <h3>Из какого состояния<br>ты сейчас действуешь?</h3>
-          <p>Выбери первое слово, которое отзывается. Здесь нет правильного ответа.</p>
-        </div>
-        <div class="game-options" id="gameOptions">
-          <button type="button" data-answer="Контроль">Контроль</button>
-          <button type="button" data-answer="Свобода">Свобода</button>
-          <button type="button" data-answer="Ожидание">Ожидание</button>
-          <button type="button" data-answer="Ясность">Ясность</button>
-          <button type="button" data-answer="Привычка">Привычка</button>
-          <button type="button" data-answer="Выбор">Выбор</button>
-        </div>
-        <div class="game-result" id="gameResult">
-          <span>ТВОЙ ВЫБОР</span>
-          <strong>—</strong>
-          <p>Заметь не слово. Заметь, почему выбрал именно его.</p>
-        </div>
-      </div>
-
-      <div class="pillars">
-        <div><span>01</span><b>ЗАМЕТИТЬ</b><p>Что происходит сейчас.</p></div>
-        <div><span>02</span><b>РАЗЛИЧИТЬ</b><p>Факт и привычную интерпретацию.</p></div>
-        <div><span>03</span><b>ВЫБРАТЬ</b><p>Не по инерции.</p></div>
-        <div><span>04</span><b>СОЗДАТЬ</b><p>Следующий результат.</p></div>
-      </div>
-    </section>
-
-    <section class="manifesto">
-      <div class="manifesto-line">
-        <span>БЫТЬ</span>
-        <i></i>
-        <span>ВЫБИРАТЬ</span>
-        <i></i>
-        <span>СОЗДАВАТЬ</span>
-        <i></i>
-        <span class="accent">ИМЕТЬ</span>
-      </div>
-      <blockquote>«Не новые цели. Другой способ быть — и уже из него создавать.»</blockquote>
-    </section>
-
-    <section class="participation" id="participation">
-      <div class="section-head">
-        <span class="section-num">03</span>
-        <p>Участие</p>
-      </div>
-      <div class="participation-grid">
-        <div>
-          <span class="eyebrow dark">ДЛЯ ВЫПУСКНИКОВ ЛП</span>
-          <h2>Ты уже прошёл<br>первый уровень.</h2>
-        </div>
-        <div class="participation-copy">
-          <p>Мастерский курс — следующий шаг для тех, кто прошёл Лидерскую программу и хочет продолжить работу в этом контексте.</p>
-          <div class="steps">
-            <div><span>1</span><b>Оставить заявку</b></div>
-            <div><span>2</span><b>Получить подтверждение</b></div>
-            <div><span>3</span><b>Получить дату и место</b></div>
-          </div>
+      <div class="v2-being-copy">
+        <div class="v2-kicker">ОТ БЫТЬ К ИМЕТЬ — СРАЗУ</div>
+        <h2>Мастерство —<br><em>быть и сразу иметь.</em></h2>
+        <button class="v2-provocation" id="provocationBtn" type="button">Можно ничего не делать? <span>+</span></button>
+        <div class="v2-answer" id="provocationAnswer">
+          <p><b>Нет.</b> Но действие — не первое.</p>
+          <p>Сначала — какой ты в этот момент. Из какого состояния смотришь, выбираешь, говоришь и действуешь.</p>
+          <p>Когда состояние меняется, иногда один точный шаг создаёт больше, чем десятки привычных действий.</p>
         </div>
       </div>
     </section>
 
-    <section class="request" id="request">
-      <div class="request-copy">
-        <span class="eyebrow">ПРЕДВАРИТЕЛЬНАЯ ЗАПИСЬ</span>
-        <h2>Если откликается —<br><em>не откладывай.</em></h2>
-        <p>Дата формируется. Оставь контакты, чтобы получить информацию о старте в Красноярске.</p>
-        <div class="trainer-note">Проводит: <strong>Елизавета Ярославцева</strong></div>
+    <section class="v2-screen v2-mystery" id="screen3">
+      <div class="v2-mystery-art visual-self" aria-hidden="true"></div>
+      <div class="v2-mystery-overlay"></div>
+      <div class="v2-number">03 / 05</div>
+      <div class="v2-mystery-content">
+        <div class="v2-i">Я<span>?</span></div>
+        <div class="v2-mystery-lines">
+          <p>Кто я — до роли?</p>
+          <p>Кто я — до привычной реакции?</p>
+          <p>Кем я выбираю быть, когда никто не подсказывает ответ?</p>
+        </div>
+      </div>
+      <div class="v2-whisper">Ответ не нужно придумывать сразу.</div>
+    </section>
+
+    <section class="v2-screen v2-game" id="screen4">
+      <div class="v2-number">04 / 05</div>
+      <div class="v2-game-head">
+        <div class="v2-kicker">НЕБОЛЬШОЙ ВНУТРЕННИЙ ТЕСТ</div>
+        <h2>Из чего ты<br>действуешь сейчас?</h2>
+        <p>Не анализируй. Выбери первое слово, которое отзывается.</p>
       </div>
 
-      <form class="request-form" id="requestForm">
-        <label><span>Имя</span><input name="name" autocomplete="name" required placeholder="Как к вам обращаться"></label>
+      <div class="v2-game-options" id="gameOptions">
+        <button type="button" data-answer="Контроль">Контроль</button>
+        <button type="button" data-answer="Страх">Страх</button>
+        <button type="button" data-answer="Привычка">Привычка</button>
+        <button type="button" data-answer="Ожидание">Ожидание</button>
+        <button type="button" data-answer="Ясность">Ясность</button>
+        <button type="button" data-answer="Выбор">Выбор</button>
+      </div>
+
+      <div class="v2-game-result" id="gameResult">
+        <span>ТВОЙ ВЫБОР</span>
+        <strong>—</strong>
+        <p>Важно не слово. Важно состояние, которое стоит за ним.</p>
+      </div>
+    </section>
+
+    <section class="v2-screen v2-final" id="screen5">
+      <div class="v2-final-art visual-result" aria-hidden="true"></div>
+      <div class="v2-final-overlay"></div>
+      <div class="v2-number">05 / 05</div>
+
+      <div class="v2-final-copy">
+        <div class="v2-kicker">МАСТЕРСКИЙ КУРС · КРАСНОЯРСК</div>
+        <h2>Елизавета<br>Ярославцева</h2>
+        <p>Очный Мастерский курс для выпускников Лидерской программы.</p>
+        <div class="v2-meta"><span>Красноярск</span><span>Дата формируется</span></div>
+      </div>
+
+      <form class="v2-form" id="requestForm">
+        <div class="v2-form-title">Оставить заявку</div>
+        <label><span>Имя</span><input name="name" autocomplete="name" required placeholder="Ваше имя"></label>
         <label><span>Телефон или Telegram</span><input name="contact" required placeholder="+7 ... / @username"></label>
         <label><span>Где проходили Лидерскую программу</span><input name="city" placeholder="Город / центр"></label>
         <label><span>Когда проходили</span><input name="year" placeholder="Год"></label>
         <button type="submit">Оставить заявку <span>↗</span></button>
-        <p class="form-status" id="formStatus" aria-live="polite"></p>
+        <p class="v2-form-status" id="formStatus" aria-live="polite"></p>
       </form>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="brand">
-      <span class="brand-mark">MK</span>
-      <span class="brand-copy">МАСТЕРСКИЙ КУРС<br><b>КРАСНОЯРСК</b></span>
-    </div>
-    <span>От БЫТЬ к ИМЕТЬ</span>
-    <a href="#top">Наверх ↑</a>
-  </footer>
 
   <script src="/script.js"></script>
 </body>
