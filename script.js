@@ -11,12 +11,24 @@ const stateField = document.getElementById('gameOptions');
 const buttons = document.querySelectorAll('#gameOptions button');
 const result = document.querySelector('#gameResult strong');
 
+const stateScreen = document.querySelector('.premium-state');
+const stateResult = document.getElementById('gameResult');
+
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     buttons.forEach(b => b.classList.remove('active'));
     button.classList.add('active');
     stateField?.classList.add('has-choice');
+    stateScreen?.classList.add('state-selected');
+    stateResult?.classList.add('is-active');
     if (result) result.textContent = button.dataset.answer;
+  });
+});
+
+document.querySelectorAll('.method-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.method-item').forEach(x => x.classList.remove('is-open'));
+    item.classList.add('is-open');
   });
 });
 
