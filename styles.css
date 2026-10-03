@@ -806,3 +806,252 @@ button,input{font:inherit}
     font-size:7.35vw;
   }
 }
+
+
+/* ===== New content screens: inner stability + course practice ===== */
+#app-v2 .v2-nextlevel{
+  background:#0b0d0f;
+  color:#f2eee7;
+  padding:14vh 5vw 7vh;
+  display:grid;
+  align-items:center;
+}
+#app-v2 .v2-nextlevel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 78% 22%,rgba(240,201,130,.13),transparent 25%),
+    linear-gradient(135deg,transparent 0 55%,rgba(255,255,255,.025) 55% 56%,transparent 56%);
+  pointer-events:none;
+}
+#app-v2 .v2-nextlevel-inner{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:8vw;
+  align-items:end;
+}
+#app-v2 .v2-nextlevel-intro h2{
+  margin:18px 0 28px;
+  font-size:clamp(58px,7.5vw,124px);
+  line-height:.88;
+  letter-spacing:-.07em;
+  font-weight:500;
+}
+#app-v2 .v2-nextlevel-intro h2 em{
+  font-style:normal;
+  color:#f0c982;
+}
+#app-v2 .v2-nextlevel-intro>p{
+  max-width:560px;
+  font-size:clamp(18px,1.55vw,25px);
+  line-height:1.45;
+  color:#a8aaa6;
+}
+#app-v2 .v2-nextlevel-intro strong{
+  color:#f1eee7;
+  font-weight:500;
+}
+#app-v2 .v2-nextlevel-lead{
+  max-width:720px;
+  margin:0 0 34px;
+  font-size:18px;
+  line-height:1.6;
+  color:#b7b9b6;
+}
+#app-v2 .v2-nextlevel-points{
+  border-top:1px solid rgba(255,255,255,.16);
+}
+#app-v2 .v2-nextlevel-points article{
+  display:grid;
+  grid-template-columns:54px .8fr 1.1fr;
+  gap:22px;
+  align-items:start;
+  padding:23px 0;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+#app-v2 .v2-nextlevel-points span{
+  font-size:9px;
+  letter-spacing:.18em;
+  color:#777b78;
+}
+#app-v2 .v2-nextlevel-points h3{
+  margin:0;
+  font-size:17px;
+  font-weight:500;
+  line-height:1.25;
+}
+#app-v2 .v2-nextlevel-points p{
+  margin:0;
+  font-size:13px;
+  line-height:1.55;
+  color:#8f928f;
+}
+#app-v2 .v2-nextlevel-footer{
+  position:absolute;
+  z-index:2;
+  left:5vw;
+  bottom:4vh;
+  font-size:10px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:#707370;
+}
+
+#app-v2 .v2-practice{
+  background:#e8e3d8;
+  color:#121313;
+  padding:14vh 5vw 7vh;
+  display:grid;
+  grid-template-columns:.78fr 1.22fr;
+  grid-template-rows:1fr auto;
+  gap:4vw 8vw;
+}
+#app-v2 .v2-practice .v2-number{color:#74706a}
+#app-v2 .v2-practice .v2-kicker{color:#77736c}
+#app-v2 .v2-practice-head h2{
+  margin:17px 0 0;
+  font-size:clamp(58px,7.7vw,128px);
+  line-height:.86;
+  letter-spacing:-.075em;
+  font-weight:500;
+}
+#app-v2 .v2-practice-head h2 em{
+  font-style:normal;
+  color:#7e2137;
+}
+#app-v2 .v2-practice-list{
+  align-self:center;
+  border-top:1px solid #bbb4a8;
+}
+#app-v2 .v2-practice-list>div{
+  display:grid;
+  grid-template-columns:55px 1fr;
+  gap:20px;
+  padding:20px 0;
+  border-bottom:1px solid #bbb4a8;
+}
+#app-v2 .v2-practice-list span{
+  font-size:9px;
+  letter-spacing:.15em;
+  color:#817b72;
+}
+#app-v2 .v2-practice-list p{
+  margin:0;
+  font-size:14px;
+  line-height:1.55;
+  color:#4f4b45;
+}
+#app-v2 .v2-practice-list strong{
+  color:#171716;
+  font-weight:600;
+}
+#app-v2 .v2-practice-result{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:.38fr 1.62fr;
+  gap:30px;
+  align-items:start;
+  padding-top:26px;
+  border-top:1px solid #bbb4a8;
+}
+#app-v2 .v2-practice-result span{
+  font-size:9px;
+  letter-spacing:.18em;
+  color:#817b72;
+}
+#app-v2 .v2-practice-result p{
+  margin:0;
+  max-width:980px;
+  font-size:clamp(23px,2.4vw,40px);
+  line-height:1.15;
+  letter-spacing:-.03em;
+}
+
+@media(max-width:900px){
+  #app-v2 .v2-nextlevel-inner{
+    grid-template-columns:1fr;
+    gap:44px;
+  }
+  #app-v2 .v2-practice{
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto auto;
+  }
+  #app-v2 .v2-practice-result{
+    grid-column:1;
+  }
+}
+
+@media(max-width:640px){
+  #app-v2 .v2-nextlevel{
+    min-height:auto;
+    padding:108px 20px 76px;
+  }
+  #app-v2 .v2-nextlevel-inner{
+    gap:34px;
+  }
+  #app-v2 .v2-nextlevel-intro h2{
+    margin:12px 0 20px;
+    font-size:clamp(49px,13vw,65px);
+    line-height:.9;
+  }
+  #app-v2 .v2-nextlevel-intro>p{
+    font-size:16px;
+    line-height:1.45;
+  }
+  #app-v2 .v2-nextlevel-lead{
+    margin-bottom:24px;
+    font-size:14px;
+    line-height:1.55;
+  }
+  #app-v2 .v2-nextlevel-points article{
+    grid-template-columns:38px 1fr;
+    gap:8px 12px;
+    padding:18px 0;
+  }
+  #app-v2 .v2-nextlevel-points article p{
+    grid-column:2;
+    font-size:13px;
+  }
+  #app-v2 .v2-nextlevel-points h3{
+    font-size:16px;
+  }
+  #app-v2 .v2-nextlevel-footer{
+    left:20px;
+    right:20px;
+    bottom:22px;
+    font-size:8px;
+    line-height:1.4;
+  }
+
+  #app-v2 .v2-practice{
+    min-height:auto;
+    padding:108px 20px 42px;
+    gap:32px;
+  }
+  #app-v2 .v2-practice-head h2{
+    margin-top:12px;
+    font-size:clamp(52px,14vw,68px);
+    line-height:.88;
+  }
+  #app-v2 .v2-practice-list>div{
+    grid-template-columns:34px 1fr;
+    gap:12px;
+    padding:17px 0;
+  }
+  #app-v2 .v2-practice-list p{
+    font-size:13px;
+    line-height:1.5;
+  }
+  #app-v2 .v2-practice-result{
+    grid-template-columns:1fr;
+    gap:12px;
+    padding-top:20px;
+  }
+  #app-v2 .v2-practice-result p{
+    font-size:25px;
+    line-height:1.12;
+  }
+}
