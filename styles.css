@@ -1454,3 +1454,105 @@ button,input{font:inherit}
   #app-v2 .premium-form .v2-form-title{font-size:28px;margin-bottom:22px}
   #app-v2 .premium-form input{font-size:16px}
 }
+
+
+/* ===== FINAL PREMIUM POLISH ===== */
+#app-v2 .recognition-thesis{
+  display:grid;
+  grid-template-columns:.32fr 1.68fr;
+  gap:28px;
+  align-items:start;
+  border-top:1px solid var(--premium-line);
+  padding-top:25px;
+}
+#app-v2 .recognition-thesis span{
+  font-size:9px;
+  letter-spacing:.19em;
+  color:var(--premium-gold);
+}
+#app-v2 .recognition-thesis p{
+  margin:0;
+  max-width:980px;
+  font-size:clamp(22px,2.2vw,36px);
+  line-height:1.16;
+  letter-spacing:-.03em;
+  color:#d4d3ce;
+}
+#app-v2 .practice-methods-premium>button{
+  width:100%;
+  display:grid;
+  grid-template-columns:42px .8fr 1.1fr;
+  gap:18px;
+  padding:17px 0;
+  align-items:start;
+  text-align:left;
+  border:0;
+  border-bottom:1px solid #bdb6aa;
+  background:transparent;
+  color:#151616;
+  cursor:pointer;
+}
+#app-v2 .practice-methods-premium>button span{
+  font-size:9px;
+  letter-spacing:.14em;
+  color:#888178;
+}
+#app-v2 .practice-methods-premium>button strong{
+  font-size:14px;
+  font-weight:600;
+}
+#app-v2 .practice-methods-premium>button p{
+  margin:0;
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(-4px);
+  transition:max-height .45s ease,opacity .35s ease,transform .35s ease;
+  font-size:12px;
+  line-height:1.5;
+  color:#6b665f;
+}
+#app-v2 .practice-methods-premium>button.is-open p,
+#app-v2 .practice-methods-premium>button:hover p{
+  max-height:90px;
+  opacity:1;
+  transform:none;
+}
+#app-v2 .practice-methods-premium>button.is-open strong{
+  color:#7d2438;
+}
+#app-v2 .premium-state{
+  transition:background 1s ease;
+}
+#app-v2 .premium-state.state-selected{
+  background:
+    radial-gradient(circle at 64% 52%,rgba(231,189,120,.13),transparent 31%),
+    #090b0c;
+}
+#app-v2 .state-result{
+  transition:opacity .45s ease,transform .45s ease;
+}
+#app-v2 .state-result.is-active{
+  transform:translateY(-2px);
+}
+#app-v2 .state-result.is-active strong{
+  text-shadow:0 0 28px rgba(231,189,120,.16);
+}
+@media(max-width:640px){
+  #app-v2 .recognition-thesis{
+    grid-template-columns:1fr;
+    gap:10px;
+    padding-top:18px;
+  }
+  #app-v2 .recognition-thesis p{
+    font-size:23px;
+  }
+  #app-v2 .practice-methods-premium>button{
+    grid-template-columns:31px 1fr;
+    gap:6px 10px;
+    padding:15px 0;
+  }
+  #app-v2 .practice-methods-premium>button p{
+    grid-column:2;
+  }
+}
