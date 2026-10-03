@@ -7,15 +7,36 @@ if (provoke && answer) {
   });
 }
 
+const stateField = document.getElementById('gameOptions');
 const buttons = document.querySelectorAll('#gameOptions button');
 const result = document.querySelector('#gameResult strong');
+
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     buttons.forEach(b => b.classList.remove('active'));
     button.classList.add('active');
+    stateField?.classList.add('has-choice');
     if (result) result.textContent = button.dataset.answer;
   });
 });
+
+const screens = [...document.querySelectorAll('[data-screen]')];
+const currentEl = document.getElementById('progressCurrent');
+const fillEl = document.getElementById('progressFill');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      const n = Number(entry.target.dataset.screen || 1);
+      if (currentEl) currentEl.textContent = String(n).padStart(2, '0');
+      if (fillEl) fillEl.style.width = ((n / 7) * 100) + '%';
+    }
+  });
+}, { threshold: 0.46 });
+
+screens.forEach(screen => observer.observe(screen));
+if (screens[0]) screens[0].classList.add('is-visible');
 
 const form = document.getElementById('requestForm');
 const status = document.getElementById('formStatus');
