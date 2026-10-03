@@ -1556,3 +1556,264 @@ button,input{font:inherit}
     grid-column:2;
   }
 }
+
+
+/* =========================================================
+   ART-DIRECTOR TYPOGRAPHIC POLISH — FINAL
+   ========================================================= */
+
+/* One accent only: graphite / ivory / warm gold */
+#app-v2{
+  --premium-gold:#d9b474;
+}
+#app-v2 .practice-head h2 em,
+#app-v2 .practice-methods-premium>button.is-open strong{
+  color:var(--premium-gold)!important;
+}
+
+/* Hero footnote: short, quiet, instantly readable */
+#app-v2 .v2-first-bottom{
+  max-width:92vw;
+}
+#app-v2 .v2-first-bottom span:first-child{
+  max-width:380px;
+}
+
+/* Screen 02 — formula is a graphic cue, headline remains dominant */
+#app-v2 .v2-formula{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 11px;
+  max-width:760px;
+  font-size:8px;
+  line-height:1.4;
+  letter-spacing:.19em;
+  color:rgba(241,238,231,.48);
+}
+#app-v2 .v2-formula i{
+  font-style:normal;
+  color:rgba(217,180,116,.55);
+  letter-spacing:0;
+}
+#app-v2 .v2-formula span:last-child{
+  color:rgba(217,180,116,.8);
+}
+#app-v2 .v2-being h2{
+  max-width:980px;
+  font-size:clamp(50px,5.65vw,92px)!important;
+}
+
+/* Screen 03 -> 04 should feel like one continuous black chapter */
+#app-v2 .premium-recognition{
+  background:
+    radial-gradient(circle at 82% 15%,rgba(217,180,116,.065),transparent 25%),
+    linear-gradient(180deg,#070809 0%,#090b0c 36%,#080a0b 100%)!important;
+}
+#app-v2 .v2-mystery{
+  box-shadow:inset 0 -80px 110px -80px rgba(8,10,11,.95);
+}
+
+/* Reduce the 'everything is a hero' effect on screens 04–07 */
+#app-v2 .recognition-title h2{
+  font-size:clamp(52px,5.7vw,90px)!important;
+  line-height:.91!important;
+}
+#app-v2 .practice-head h2{
+  font-size:clamp(52px,5.85vw,94px)!important;
+  line-height:.9!important;
+}
+#app-v2 .state-intro h2{
+  font-size:clamp(50px,5.5vw,88px)!important;
+  line-height:.92!important;
+}
+#app-v2 .premium-final h2{
+  font-size:clamp(50px,5.45vw,88px)!important;
+  line-height:.92!important;
+}
+
+/* Screen 04: more breathing room on laptop widths */
+#app-v2 .recognition-grid{
+  align-items:start!important;
+  padding-top:3vh;
+}
+#app-v2 .recognition-signals>div{
+  padding:27px 0!important;
+}
+#app-v2 .recognition-thesis{
+  margin-top:2vh;
+}
+#app-v2 .recognition-thesis p{
+  max-width:900px;
+  font-size:clamp(20px,1.9vw,32px)!important;
+}
+
+/* Screen 05: editorial index, not an accordion card stack */
+#app-v2 .practice-methods-premium{
+  border-top:1px solid #b9b1a5;
+}
+#app-v2 .practice-methods-premium>button{
+  position:relative;
+  min-height:64px;
+  grid-template-columns:48px .92fr 1.08fr!important;
+  padding:19px 0!important;
+  border-bottom:1px solid #b9b1a5!important;
+}
+#app-v2 .practice-methods-premium>button span{
+  padding-top:3px;
+}
+#app-v2 .practice-methods-premium>button strong{
+  font-size:clamp(15px,1.18vw,19px)!important;
+  line-height:1.25;
+  letter-spacing:-.018em;
+  font-weight:500!important;
+  transition:color .3s ease,transform .3s ease;
+}
+#app-v2 .practice-methods-premium>button p{
+  justify-self:end;
+  width:min(100%,440px);
+  font-size:12px!important;
+  color:#666159!important;
+}
+#app-v2 .practice-methods-premium>button:hover strong,
+#app-v2 .practice-methods-premium>button.is-open strong{
+  transform:translateX(5px);
+}
+#app-v2 .practice-result p{
+  font-size:clamp(22px,2.15vw,34px)!important;
+}
+
+/* Screen 06: intentional typographic constellation */
+#app-v2 .state-field button{
+  line-height:1;
+}
+#app-v2 .state-field button:nth-child(1){font-size:clamp(25px,2.2vw,38px)!important;left:4%;top:7%}
+#app-v2 .state-field button:nth-child(2){font-size:clamp(21px,1.8vw,31px)!important;right:13%;top:15%}
+#app-v2 .state-field button:nth-child(3){font-size:clamp(31px,3vw,48px)!important;left:31%;top:36%}
+#app-v2 .state-field button:nth-child(4){font-size:clamp(24px,2.05vw,36px)!important;right:2%;top:56%}
+#app-v2 .state-field button:nth-child(5){font-size:clamp(34px,3.25vw,54px)!important;left:3%;bottom:10%}
+#app-v2 .state-field button:nth-child(6){font-size:clamp(34px,3.15vw,52px)!important;right:24%;bottom:2%}
+#app-v2 .state-field button.active{
+  transform:scale(1.07)!important;
+}
+#app-v2 .state-field.has-choice button:not(.active){
+  opacity:.26!important;
+}
+
+/* Final: slightly quieter, form integrated with the composition */
+#app-v2 .premium-form{
+  max-width:510px;
+}
+#app-v2 .premium-form .v2-form-title{
+  font-size:clamp(28px,2.35vw,38px)!important;
+}
+#app-v2 .premium-form label{
+  margin:25px 0!important;
+}
+#app-v2 .premium-form button{
+  font-size:13px;
+  letter-spacing:.02em;
+}
+#app-v2 .form-note{
+  max-width:340px;
+}
+
+/* Mobile is recomposed, not shrunk desktop */
+@media(max-width:640px){
+  #app-v2 .v2-first-bottom span:first-child{
+    max-width:250px;
+  }
+  #app-v2 .v2-formula{
+    gap:5px 7px;
+    max-width:320px;
+    font-size:6.5px;
+    letter-spacing:.11em;
+  }
+  #app-v2 .v2-being h2{
+    font-size:clamp(42px,11.4vw,56px)!important;
+  }
+  #app-v2 .recognition-title h2,
+  #app-v2 .practice-head h2,
+  #app-v2 .state-intro h2,
+  #app-v2 .premium-final h2{
+    font-size:clamp(43px,11.6vw,56px)!important;
+    line-height:.93!important;
+  }
+  #app-v2 .recognition-signals>div{
+    padding:18px 0!important;
+  }
+  #app-v2 .recognition-thesis p{
+    font-size:21px!important;
+  }
+
+  /* Journal index becomes tap rows */
+  #app-v2 .practice-methods-premium>button{
+    grid-template-columns:30px 1fr!important;
+    min-height:58px;
+    gap:5px 10px!important;
+    padding:16px 0!important;
+  }
+  #app-v2 .practice-methods-premium>button strong{
+    font-size:14px!important;
+  }
+  #app-v2 .practice-methods-premium>button p{
+    grid-column:2;
+    justify-self:start;
+    width:100%;
+    margin-top:3px!important;
+  }
+  #app-v2 .practice-methods-premium>button:hover strong{
+    transform:none;
+  }
+  #app-v2 .practice-methods-premium>button.is-open strong{
+    transform:translateX(3px);
+  }
+
+  /* State test becomes a deliberate mobile grid */
+  #app-v2 .state-field{
+    min-height:auto!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:8px 14px;
+    margin:8px 0 2px!important;
+  }
+  #app-v2 .state-field button,
+  #app-v2 .state-field button:nth-child(n){
+    position:relative!important;
+    left:auto!important;
+    right:auto!important;
+    top:auto!important;
+    bottom:auto!important;
+    justify-self:start;
+    padding:12px 0!important;
+    font-size:clamp(23px,7vw,30px)!important;
+    transform:none!important;
+  }
+  #app-v2 .state-field button:nth-child(even){
+    justify-self:end;
+  }
+  #app-v2 .state-field button:nth-child(5),
+  #app-v2 .state-field button:nth-child(6){
+    font-size:clamp(28px,8.2vw,35px)!important;
+  }
+  #app-v2 .state-field button.active{
+    transform:none!important;
+  }
+  #app-v2 .state-result{
+    margin-top:10px;
+  }
+}
+
+/* Smaller phone safety */
+@media(max-width:390px){
+  #app-v2 .v2-formula{
+    max-width:285px;
+    font-size:6px;
+  }
+  #app-v2 .recognition-title h2,
+  #app-v2 .practice-head h2,
+  #app-v2 .state-intro h2,
+  #app-v2 .premium-final h2{
+    font-size:11.1vw!important;
+  }
+}
