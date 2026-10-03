@@ -8,22 +8,24 @@
   <title>Мастерский курс — Красноярск</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body id="app-v2">
   <div class="noise" aria-hidden="true"></div>
 
-  <header class="v2-header">
+  <header class="v2-header premium-header">
     <a href="#screen1" class="v2-brand">МК <span>КРАСНОЯРСК</span></a>
-    <div class="v2-progress" aria-label="Навигация по экранам">
-      <a href="#screen1">01</a><a href="#screen2">02</a><a href="#screen3">03</a><a href="#screen4">04</a><a href="#screen5">05</a><a href="#screen6">06</a><a href="#screen7">07</a>
+    <div class="premium-progress" aria-label="Прогресс просмотра">
+      <span id="progressCurrent">01</span>
+      <i><b id="progressFill"></b></i>
+      <span>07</span>
     </div>
     <a href="#screen7" class="v2-request-link">Оставить заявку <span class="css-arrow" aria-hidden="true"></span></a>
   </header>
 
   <main class="v2-main">
-    <section class="v2-screen v2-first" id="screen1">
+    <section class="v2-screen v2-first premium-reveal" id="screen1" data-screen="1">
       <div class="v2-overlay"></div>
       <div class="v2-number">01 / 07</div>
       <div class="v2-first-copy">
@@ -33,33 +35,29 @@
         <a href="#screen2" class="v2-arrow-link">Начать <span>↓</span></a>
       </div>
       <div class="v2-first-bottom">
-        <span>Для выпускников Лидерской программы</span>
+        <span>Для выпускников программ личностного роста</span>
         <span>Очно · дата формируется</span>
       </div>
     </section>
 
-    <section class="v2-screen v2-being" id="screen2">
+    <section class="v2-screen v2-being premium-reveal" id="screen2" data-screen="2">
       <div class="v2-being-art visual-choice" aria-hidden="true"></div>
       <div class="v2-being-shade"></div>
       <div class="v2-number">02 / 07</div>
-
-      <div class="v2-axis">
-        <strong>БЫТЬ</strong><i></i><strong class="v2-axis-end">ИМЕТЬ</strong>
-      </div>
-
+      <div class="v2-axis"><strong>БЫТЬ</strong><i></i><strong class="v2-axis-end">ИМЕТЬ</strong></div>
       <div class="v2-being-copy">
-        <div class="v2-kicker">ОТ БЫТЬ К ИМЕТЬ — СРАЗУ</div>
-        <h2>Мастерство —<br><em>быть и сразу иметь.</em></h2>
+        <div class="v2-kicker">ОТ БЫТЬ К ИМЕТЬ</div>
+        <h2>Мастерство —<br><em>быть и иметь.</em></h2>
         <button class="v2-provocation" id="provocationBtn" type="button">Можно ничего не делать? <span>+</span></button>
         <div class="v2-answer" id="provocationAnswer">
           <p><b>Нет.</b> Но действие — не первое.</p>
-          <p>Сначала — какой ты в этот момент. Из какого состояния смотришь, выбираешь, говоришь и действуешь.</p>
-          <p>Когда состояние меняется, иногда один точный шаг создаёт больше, чем десятки привычных действий.</p>
+          <p>Сначала — какой вы в этот момент. Из какого состояния смотрите, выбираете, говорите и действуете.</p>
+          <p>Когда состояние меняется, один точный шаг может оказаться важнее десятков привычных действий.</p>
         </div>
       </div>
     </section>
 
-    <section class="v2-screen v2-mystery" id="screen3">
+    <section class="v2-screen v2-mystery premium-reveal" id="screen3" data-screen="3">
       <div class="v2-mystery-art visual-self" aria-hidden="true"></div>
       <div class="v2-mystery-overlay"></div>
       <div class="v2-number">03 / 07</div>
@@ -74,57 +72,64 @@
       <div class="v2-whisper">Ответ не нужно придумывать сразу.</div>
     </section>
 
-    <section class="v2-screen v2-nextlevel" id="screen4">
+    <section class="v2-screen premium-recognition premium-reveal" id="screen4" data-screen="4">
       <div class="v2-number">04 / 07</div>
-      <div class="v2-nextlevel-inner">
-        <div class="v2-nextlevel-intro">
+      <div class="recognition-grid">
+        <div class="recognition-title">
           <div class="v2-kicker">СЛЕДУЮЩИЙ УРОВЕНЬ</div>
-          <h2>Вы уже знаете,<br>как получать <em>желаемое.</em></h2>
-          <p>Следующий вопрос — <strong>как не терять себя в процессе.</strong></p>
+          <h2>Вы умеете<br><em>достигать.</em></h2>
+          <p>Но что происходит с вами, пока вы достигаете?</p>
         </div>
 
-        <div class="v2-nextlevel-copy">
-          <p class="v2-nextlevel-lead">Для участников, прошедших «ПШ», «Формулу Успеха», «ПроЯвления», «Спарту» или аналогичные программы личностного роста.</p>
-          <div class="v2-nextlevel-points">
-            <article><span>01</span><h3>Ясность вместо реакции</h3><p>Отделять факты от эмоций и замечать, из чего рождается решение.</p></article>
-            <article><span>02</span><h3>Психологическая устойчивость</h3><p>Сохранять себя в работе, семье, спорте и в период высокой нагрузки.</p></article>
-            <article><span>03</span><h3>Управление состоянием</h3><p>Различать мысли, эмоции и ощущения — и осознанно выбирать следующий шаг.</p></article>
+        <div class="recognition-body">
+          <p class="recognition-audience">Для тех, кто уже прошёл «ПШ», «Формулу Успеха», «ПроЯвления», «Спарту» или аналогичные программы.</p>
+          <div class="recognition-signals">
+            <div><span>01</span><p>Всё понимаете головой — но иногда реагируете по-старому.</p></div>
+            <div><span>02</span><p>Внешне справляетесь — а внутри накапливается напряжение.</p></div>
+            <div><span>03</span><p>Хочется отделять факт от эмоции и сохранять ясность под нагрузкой.</p></div>
           </div>
         </div>
       </div>
-      <div class="v2-nextlevel-footer">От внешнего результата — к внутренней опоре.</div>
+
+      <div class="recognition-outcomes">
+        <article><span>ЯСНОСТЬ</span><p>Замечать эмоцию, но принимать решение не из автоматической реакции.</p></article>
+        <article><span>УСТОЙЧИВОСТЬ</span><p>Сохранять внутреннюю опору в работе, семье, спорте и изменениях.</p></article>
+        <article><span>СОСТОЯНИЕ</span><p>Различать мысли, ощущения и факты — и осознанно выбирать следующий шаг.</p></article>
+      </div>
     </section>
 
-    <section class="v2-screen v2-practice" id="screen5">
+    <section class="v2-screen premium-practice premium-reveal" id="screen5" data-screen="5">
       <div class="v2-number">05 / 07</div>
-      <div class="v2-practice-head">
+      <div class="practice-three" aria-hidden="true">3</div>
+      <div class="practice-head">
         <div class="v2-kicker">КАК ПРОХОДИТ КУРС</div>
-        <h2><em>3 дня</em><br>практики,<br>а не лекций.</h2>
+        <h2><em>3 дня</em><br>глубокой<br>практики.</h2>
+        <p>Не набор лекций, а работа с тем, что действительно происходит с вами.</p>
       </div>
 
-      <div class="v2-practice-list">
-        <div><span>01</span><p><strong>Активная работа с тренером.</strong> Находите реальные причины трудностей, а не работаете только с их внешними проявлениями.</p></div>
-        <div><span>02</span><p><strong>Практика на ваших ситуациях.</strong> Формулируете решения и сразу проверяете, как они работают в жизни.</p></div>
-        <div><span>03</span><p><strong>Домашние задания.</strong> Тренируете навык отслеживания мыслей, ощущений и автоматических реакций.</p></div>
-        <div><span>04</span><p><strong>5 шагов «Мастерства».</strong> Осваиваете модель управления собственным состоянием.</p></div>
-        <div><span>05</span><p><strong>Групповые упражнения.</strong> Развиваете принятие себя и других в безопасной среде.</p></div>
+      <div class="practice-methods">
+        <div><span>01</span><strong>Работа с тренером</strong><p>Находите причины трудностей, а не только их внешние проявления.</p></div>
+        <div><span>02</span><strong>Практика на своих ситуациях</strong><p>Ищете решения и проверяете их на реальных жизненных задачах.</p></div>
+        <div><span>03</span><strong>Домашние задания</strong><p>Тренируете наблюдение за мыслями, ощущениями и автоматическими реакциями.</p></div>
+        <div><span>04</span><strong>5 шагов «Мастерства»</strong><p>Осваиваете модель управления собственным состоянием.</p></div>
+        <div><span>05</span><strong>Групповая практика</strong><p>Развиваете принятие себя и других в безопасной среде.</p></div>
       </div>
 
-      <div class="v2-practice-result">
+      <div class="practice-result">
         <span>РЕЗУЛЬТАТ</span>
-        <p>Устойчивые навыки, которые помогают сохранять внутреннюю опору в изменениях, стрессе и повседневной жизни.</p>
+        <p>Не просто новое понимание — а навык сохранять себя в изменениях и стрессе.</p>
       </div>
     </section>
 
-    <section class="v2-screen v2-game" id="screen6">
+    <section class="v2-screen premium-state premium-reveal" id="screen6" data-screen="6">
       <div class="v2-number">06 / 07</div>
-      <div class="v2-game-head">
-        <div class="v2-kicker">НЕБОЛЬШОЙ ВНУТРЕННИЙ ТЕСТ</div>
-        <h2>Из чего ты<br>действуешь сейчас?</h2>
-        <p>Не анализируй. Выбери первое слово, которое отзывается.</p>
+      <div class="state-intro">
+        <div class="v2-kicker">НЕ АНАЛИЗИРУЙТЕ</div>
+        <h2>Из чего вы<br>действуете <em>сейчас?</em></h2>
+        <p>Выберите первое слово, которое отзывается.</p>
       </div>
 
-      <div class="v2-game-options" id="gameOptions">
+      <div class="state-field" id="gameOptions">
         <button type="button" data-answer="Контроль">Контроль</button>
         <button type="button" data-answer="Страх">Страх</button>
         <button type="button" data-answer="Привычка">Привычка</button>
@@ -133,35 +138,43 @@
         <button type="button" data-answer="Выбор">Выбор</button>
       </div>
 
-      <div class="v2-game-result" id="gameResult">
-        <span>ТВОЙ ВЫБОР</span>
+      <div class="state-result" id="gameResult">
+        <span>ВАШ ВЫБОР</span>
         <strong>—</strong>
-        <p>Важно не слово. Важно состояние, которое стоит за ним.</p>
+        <p>Важно не само слово. Важно состояние, которое стоит за ним.</p>
       </div>
     </section>
 
-    <section class="v2-screen v2-final" id="screen7">
+    <section class="v2-screen v2-final premium-final premium-reveal" id="screen7" data-screen="7">
       <div class="v2-final-art visual-result" aria-hidden="true"></div>
       <div class="v2-final-overlay"></div>
       <div class="v2-number">07 / 07</div>
 
-      <div class="v2-final-copy">
+      <div class="final-message">
         <div class="v2-kicker">МАСТЕРСКИЙ КУРС · КРАСНОЯРСК</div>
-        <h2>Елизавета<br>Ярославцева</h2>
-        <p>Очный Мастерский курс для выпускников Лидерской программы.</p>
+        <div class="trainer-line">Елизавета Ярославцева</div>
+        <h2>Готовы посмотреть,<br><em>из чего вы действуете?</em></h2>
+        <p>Очный Мастерский курс для выпускников программ личностного роста.</p>
         <div class="v2-meta"><span>Красноярск</span><span>Дата формируется</span></div>
       </div>
 
-      <form class="v2-form" id="requestForm" action="https://formsubmit.co/ajax/Ylizaveta@mail.ru" method="POST">
+      <form class="v2-form premium-form" id="requestForm" action="https://formsubmit.co/ajax/Ylizaveta@mail.ru" method="POST">
         <div class="v2-form-title">Оставить заявку</div>
         <input type="hidden" name="_subject" value="Новая заявка — Мастерский курс">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
+
         <label><span>Имя</span><input name="name" autocomplete="name" required placeholder="Ваше имя"></label>
         <label><span>Телефон или Telegram</span><input name="contact" required placeholder="+7 ... / @username"></label>
-        <label><span>Где проходили Лидерскую программу</span><input name="city" placeholder="Город / центр"></label>
-        <label><span>Когда проходили</span><input name="year" placeholder="Год"></label>
-        <button type="submit">Оставить заявку <span class="css-arrow" aria-hidden="true"></span></button>
+
+        <details class="form-details">
+          <summary>Добавить информацию о пройденной программе</summary>
+          <label><span>Где проходили программу</span><input name="city" placeholder="Город / центр"></label>
+          <label><span>Когда проходили</span><input name="year" placeholder="Год"></label>
+        </details>
+
+        <button type="submit">Отправить заявку <span class="css-arrow" aria-hidden="true"></span></button>
+        <p class="form-note">Без оплаты. Мы свяжемся с вами и расскажем детали.</p>
         <p class="v2-form-status" id="formStatus" aria-live="polite"></p>
       </form>
     </section>
